@@ -1,5 +1,24 @@
 # CSV importer
 
+When this project is run, visit http://localhost:3000/ to update a CSV file, that will process the data and insert it into a Postgres database.
+
+Afterwards, you can curl the following endpoints to get data out
+
+```
+// all customers
+http://localhost:3000/customer
+// get specific customer
+http://localhost:3000/customer/:id
+// all stores
+http://localhost:3000/store
+// get specific store
+http://localhost:3000/store/:id
+// all distribution centres
+http://localhost:3000/distribution-centre
+// get specific distribution centre
+http://localhost:3000/distribution-centre/:id
+```
+
 ![Data structure](./images/Untitled-2023-06-12-1420.png)
 
 ## Running the project
