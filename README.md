@@ -1,14 +1,41 @@
 # CSV importer
 
-## Note
+![Data structure](./images/Untitled-2023-06-12-1420.png)
 
-This is still work in progress
+## Running the project
+
+This project is only meant for local development, as none of the infrastructure of production is in place!
+
+After following the Setting up step, you can run the project using the `dev` component. which starts the project in watch mode
+
+```
+pnpm run dev
+```
 
 ## Setting up
 
-Install postgres
-Create database
+First, you'll need to have Postgres installed. Depending on your OS, this step can vary.
+https://www.postgresql.org/download/
+
+This project uses the following connection string for local developerment
+
+```
+postgresql://postgres:postgres@127.0.0.1:5432/CSV_IMPORTER
+```
+
+Postgres should come with a default user called postgres, so all that is needed should be to create a database called `CSV_IMPORTER`
 
 ```
 createdb CSV_IMPORTER
+```
+
+Lastly, install the dependencies. This project comes with a `pnpm-lock.yaml`, but you can use whatever package manager you prefer.
+
+```bash
+# npm
+npm install
+# yarn
+yarn install
+# pnpm
+pnpm install
 ```
